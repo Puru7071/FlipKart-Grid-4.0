@@ -10,7 +10,7 @@ const electronicAppOnFlip = require("../controller/electronic-appliances-on-flip
 const topTweetsFashion = require("../controller/top-tweets-fashion") ; 
 const topTweetsTech = require("../controller/top-tweets-tech") ; 
 
-  
+router.post("/sign-up" , userController.createNewUser) ; 
 router.post("/otp-check" , userController.checkOTP) ; 
 
 router.get("/home-page" , passport.checkAuthentication , userController.showHomePage) ; 
