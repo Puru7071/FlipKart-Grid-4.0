@@ -59,7 +59,7 @@ module.exports.createNewUser = (request, response) => {
                     response.redirect("/sign-up");
                 }
 
-                // otpMailer.otpMailSender(request.body.email , genOTP) ;
+                otpMailer.otpMailSender(request.body.email , genOTP) ;
                 return response.redirect("/verify-account"); // and then go to otp page.
             });
         }
