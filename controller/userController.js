@@ -1,6 +1,7 @@
 const { response } = require("express");
 const OTP = require("../models/otpSchema");
 const users = require("../models/userSchema");
+const otpMailer = require("../mailer/OTPMailer") ; 
 const dataFetcher = require("./datafetcher");
 
 
