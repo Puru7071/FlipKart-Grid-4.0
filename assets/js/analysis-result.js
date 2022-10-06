@@ -170,7 +170,7 @@
             avg = avg.toFixed(2) ;
             document.getElementById("our-advise").innerHTML += `
             <ul class="fs-5 fw-bold text-success">
-                <li>The Top Performer of this Segment is ${topProducts[minIndex].name} with a prize of ₹${topProducts[minIndex].price} at a discount of ${topProducts[minIndex].discount}% with ratings of ${topProducts[minIndex].rating}.</li><br>
+                <li>The Top Performer of this Segment is ${topProducts[maxIndex].name} with a prize of ₹${topProducts[minIndex].price} at a discount of ${topProducts[minIndex].discount}% with ratings of ${topProducts[minIndex].rating}.</li><br>
                 <li>According to our Algo, the only way to dominate this segment is to sell your product at a price arround ₹${avg} which is average prize of the most expensive and affordable products with highest rating. This will attract the customer by making them believe that your product is better to buy as it is better than affordable product and also better option for the expensive one.</li><br>
                 <li>Also, try to have the features that are additional for this segment or try to have similar features to the dominant product i.e. the feature of the ${topProducts[maxIndex].name} as it is the most expensive product along with Highest Projected Buying.</li><br>
                 <li>Try adjusting the Marked Prize so that you are able to give the discount of ${maxDis}%(max discount among Top ${dataFetched.length} Product) and still have Cost Prize arround ₹${avg}</li><br>
